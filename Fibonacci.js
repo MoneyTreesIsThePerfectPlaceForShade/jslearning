@@ -8,5 +8,3 @@ function nthFibo(n) {
     }
     return array[n-1];
 }
-
-console.log(nthFibo(10));
