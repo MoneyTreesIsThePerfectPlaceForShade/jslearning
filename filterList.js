@@ -13,3 +13,9 @@ function filter_list(l) {
 }
 
 console.log(filter_list([1, 2, "a", "b"]));
+
+function filter_list_simpler(l) {
+    return l.filter((x) => typeof x === "number");
+}
+
+console.log(filter_list_simpler([1, 2, "a", "b"]));
