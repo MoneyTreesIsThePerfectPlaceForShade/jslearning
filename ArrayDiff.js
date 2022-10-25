@@ -7,3 +7,11 @@ function arrayDiff(a, b) {
 }
 
 arrayDiff([1, 2, 3], [1, 2, 4]);
+
+const a = ["apples", "oranges", "bananas", "mangos"];
+const b = ["bananas"];
+
+// мы оставляем все, что нет в b, вот как это работает
+const res = a.filter((element) => !b.includes(element));
+
+console.log(res);
